@@ -199,58 +199,58 @@
 //  else
 //   console.log('incorrect');
    // Switch
-   const  color = 'red';
-   switch(color){
-       case 'red':
-       console.log('color is red');
-       break;
-       case 'blue':
-       console.log('color is blue');
-       break;
-       default :
-       console.log('color is not red or blue');
-       break;
+  //  const  color = 'red';
+  //  switch(color){
+  //      case 'red':
+  //      console.log('color is red');
+  //      break;
+  //      case 'blue':
+  //      console.log('color is blue');
+  //      break;
+  //      default :
+  //      console.log('color is not red or blue');
+  //      break;
 
-   }
-   let day;
-   switch(new Date().getDay()){
+  //  }
+  //  let day;
+  //  switch(new Date().getDay()){
       
-    case 0:
-       day = 'Sunaday';
-       break;
-     case 1:
-       day = 'Monday';
-       break;
-     case 2:
-       day = 'Tuesday';
-       break;
-     case 3:
-       day = 'wednesday';
-       break;
-     case 4:
-       day = 'Thrusday';
-       break;
-     case 5:
-       day = 'Friday';
-       break;
-     case 6:
-       day = 'Saturday';
-       break;
-   }
-   console.log(`Today is ${day}`);
-   // FUNCTION DECLARATIONS
- function greet(firstName = 'harsha', lastName = 'Athnere'){
-    //  if(typeof firstName === 'undefined'){firstName = 'harsha'};
-    //  if(typeof lastName === 'undefined'){lastName = 'Athnere'};
+  //   case 0:
+  //      day = 'Sunaday';
+//        break;
+//      case 1:
+//        day = 'Monday';
+//        break;
+//      case 2:
+//        day = 'Tuesday';
+//        break;
+//      case 3:
+//        day = 'wednesday';
+//        break;
+//      case 4:
+//        day = 'Thrusday';
+//        break;
+//      case 5:
+//        day = 'Friday';
+//        break;
+//      case 6:
+//        day = 'Saturday';
+//        break;
+//    }
+//    console.log(`Today is ${day}`);
+//    // FUNCTION DECLARATIONS
+//  function greet(firstName = 'harsha', lastName = 'Athnere'){
+//     //  if(typeof firstName === 'undefined'){firstName = 'harsha'};
+//     //  if(typeof lastName === 'undefined'){lastName = 'Athnere'};
 
      //console.log('hello');
-     return 'hello ' + firstName + ' ' + lastName;
- }
+    //  return 'hello ' + firstName + ' ' + lastName;
+//  }
 // console.log(greet());
 // function expressions
-const square = function(x =3){
- return x*x;
-};
+// const square = function(x =3){
+//  return x*x;
+// };
 // console.log(square());
 //Immdiatley invokable function expression - iifes
 // (function(name){
@@ -299,8 +299,8 @@ const square = function(x =3){
 // }
 // while(i<10);
 // loop through array
- const cars = ['ford','chevy', 'honda' ,'toyota']
-// for( let i=0 ; i< cars.length; i++){
+//  const cars = ['ford','chevy', 'honda' ,'toyota']
+// // for( let i=0 ; i< cars.length; i++){
 //     console.log(cars[i]);
 // }
 // FOREACH
@@ -321,11 +321,85 @@ const square = function(x =3){
 // console.log(ids);
 
 //FOR IN LOOP
- const user = {
-     firstName : 'harsha',
-     lastName: 'Athnere',
-     age: 22
- }
- for(let x in user){
-     console.log(`${x} : ${user[x]}`);
- }
+//  const user = {
+//      firstName : 'harsha',
+//      lastName: 'Athnere',
+//      age: 22
+//  }
+//  for(let x in user){
+//      console.log(`${x} : ${user[x]}`);
+//  }
+window.console.log(123);
+// Alert
+// window.alert(123);
+//promt
+// const input = prompt()
+// alert(input);
+
+// // confirm
+// if(confirm('Are you sure')){
+// console.log('Yes');
+// }
+// else 
+// { console.log('no')};
+let val;
+// outter height and width
+val = window.outerHeight;
+val = window.outerWidth;
+
+// inner height and width
+val = window.innerHeight;
+val = window.innerWidth;
+// scroll points
+val = window.scrollY;
+val = window.scrollX;
+// LOCATION OBJECT
+val = window.location;
+val = window.location.hostname;
+val = window.location.port;
+val = window.location.href;
+val = window.location.search;
+
+//Redirect
+// window.location.href = 'http://google.com';
+// Reload
+// window.location.reload();
+// histroy object
+//window.history.go(-1);
+//val = window.history.length;
+// Navigator Object
+
+
+// val = window.navigator;
+// val = window.navigator.appName;
+// val = window.navigator.appVersion;
+// val = window.navigator.userAgent;
+// val = window.navigator.platform;
+// val = window.navigator.vendor;
+// val = window.navigator.language;
+
+// console.log(val);
+
+//Global Scope
+var a = 1;
+let b = 2;
+const c = 3;
+// function test(){
+//   var a = 1;
+// let b = 2;
+// const c = 3;
+// console.log('function Scope' , a, b, c);
+// }
+// test();
+// if(true){
+//   // block scope
+//   var a = 4;
+// let b = 5;
+// const c = 6;
+// console.log('if Scope' , a, b, c);
+// }
+for(let a=0; a<10 ; a++){
+  console.log(`loop: ${a}`);
+}
+
+console.log('Global Scope' , a, b, c);
