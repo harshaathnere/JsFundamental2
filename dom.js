@@ -89,26 +89,243 @@
 // for( let i=0; i< person.length; i++){
 //  console.log(person[i].name);
 // }
-let val;
- const today = new Date();
- let birthday = new Date('1-03-2019 11:25:00');
-  birthday = new Date('march 10 2019');
-   birthday = new Date('1/03/2019');
- val = today.getMonth();
- val = today.getDate();
- val = today.getDay();
- val = today.getFullYear();
- val = today.getHours();
- val = today.getMinutes();
- val = today.getSeconds();
- val = today.getMilliseconds();
- val = today.getTime();
- birthday.setMonth(2);
- birthday.setDate(12);
- birthday.setFullYear(1999);
- birthday.setHours(3);
- birthday.setMinutes(30);
- birthday.setSeconds(45);
- console.log(birthday);
+// let val;
+//  const today = new Date();
+//  let birthday = new Date('1-03-2019 11:25:00');
+//   birthday = new Date('march 10 2019');
+//    birthday = new Date('1/03/2019');
+//  val = today.getMonth();
+//  val = today.getDate();
+//  val = today.getDay();
+//  val = today.getFullYear();
+//  val = today.getHours();
+//  val = today.getMinutes();
+//  val = today.getSeconds();
+//  val = today.getMilliseconds();
+//  val = today.getTime();
+//  birthday.setMonth(2);
+//  birthday.setDate(12);
+//  birthday.setFullYear(1999);
+//  birthday.setHours(3);
+//  birthday.setMinutes(30);
+//  birthday.setSeconds(45);
+//  console.log(birthday);
 
- 
+ const id = 100;
+ // equal to
+//  if(id == 101)
+//  {
+//      console.log('correct');
+//  }
+//  else{
+//      console.log('incorrect');
+//  }
+//  // not equal to
+//  if(id != 101)
+//  {
+//      console.log('correct');
+//  }
+//  else{
+//      console.log('incorrect');
+//  }
+
+//  // equal to value and type
+//  if(id === 100)
+//  {
+//      console.log('correct');
+//  }
+//  else{
+//      console.log('incorrect');
+//  }
+ // equal to value and type
+//  if(id !== 100)
+//  {
+//      console.log('correct');
+//  }
+//  else{
+//      console.log('incorrect');
+//  } 
+// Test if undefined
+// if(typeof id !== 'undefined'){
+//     console.log(`The id is ${id}`);
+// }
+// else{
+//     console.log('no id');
+// }
+//Greater or less than
+// if(id >= 100)
+//   {
+//       console.log('correct');
+//   }
+//  else {
+//            console.log('incorrect');
+//   }
+// if else 
+//  const color = 'yellow';
+// //   if(color === 'red'){
+//       console.log('color is red');
+//   } 
+//   else if(color === 'blue'){
+//       console.log('color is blue');
+//   }
+//   else {
+//       console.log('color is not red or blue');
+//   }
+//LOGICAL OPERATORS
+//  const name = 'Harsha';
+//  const age = 22;
+//  // AND &&
+//  if(age>0 && age<12){
+//      console.log(`${name} is a child`);
+//  }
+//  else if(age>= 12 && age<= 19){
+//      console.log(`${name} is a teenager`);
+//  }
+//  else{
+//      console.log(`${name} is an adult`);
+//  }
+//  // OR
+// if(age<16 || age>65){
+//     console.log(`${name} can not run in a race` );
+// }
+// else{
+//     console.log(`${name} is registered for the race`)
+// }
+// // ternary operator
+// console.log(id ===100 ? 'correct' : 'incorrect')
+//  // Without Braces
+//  if(id === 100)
+//      console.log('correct');
+//  else
+//   console.log('incorrect');
+   // Switch
+   const  color = 'red';
+   switch(color){
+       case 'red':
+       console.log('color is red');
+       break;
+       case 'blue':
+       console.log('color is blue');
+       break;
+       default :
+       console.log('color is not red or blue');
+       break;
+
+   }
+   let day;
+   switch(new Date().getDay()){
+      
+    case 0:
+       day = 'Sunaday';
+       break;
+     case 1:
+       day = 'Monday';
+       break;
+     case 2:
+       day = 'Tuesday';
+       break;
+     case 3:
+       day = 'wednesday';
+       break;
+     case 4:
+       day = 'Thrusday';
+       break;
+     case 5:
+       day = 'Friday';
+       break;
+     case 6:
+       day = 'Saturday';
+       break;
+   }
+   console.log(`Today is ${day}`);
+   // FUNCTION DECLARATIONS
+ function greet(firstName = 'harsha', lastName = 'Athnere'){
+    //  if(typeof firstName === 'undefined'){firstName = 'harsha'};
+    //  if(typeof lastName === 'undefined'){lastName = 'Athnere'};
+
+     //console.log('hello');
+     return 'hello ' + firstName + ' ' + lastName;
+ }
+// console.log(greet());
+// function expressions
+const square = function(x =3){
+ return x*x;
+};
+// console.log(square());
+//Immdiatley invokable function expression - iifes
+// (function(name){
+//     console.log('Hello' + name);
+// })('Harsha');
+// Property Method
+//  const todo = {
+//      add: function(){
+//          console.log('Add too...');
+//      },
+//      edit: function(id){
+//          console.log(`edit todo ${id}`)
+//      }
+//  }
+//   todo.delete = function(){
+//       console.log('Delete todo...');
+//   }
+//  todo.add();
+//  todo.edit(22);
+//  todo.delete();
+
+//  // for loop
+//  for(let i= 0; i<= 10; i++){
+//      //console.log( 'Number' +i);
+//      if(i==2){
+//          console.log(' 2 is my favorite no');
+//          continue;
+//      }
+//      if( i==5){
+//          console.log('Stop the loop');
+//          break;
+//      }
+// console.log( 'Number' +i);
+//  }
+// WHILE LOOP
+// let i=0;
+// while( i<10){
+//  console.log('Number' + i);
+//  i++;
+// }
+// do while loop 
+// let i= 100;
+// do {
+//     console.log('Number' + i);
+//     i++;
+// }
+// while(i<10);
+// loop through array
+ const cars = ['ford','chevy', 'honda' ,'toyota']
+// for( let i=0 ; i< cars.length; i++){
+//     console.log(cars[i]);
+// }
+// FOREACH
+// cars.forEach(function(car , index, array){
+//     console.log(`${index} : ${car}`);
+//     console.log(array);
+// });
+// // Map
+// const users = [
+//     { id: 1 , name: 'harsha'},
+//     { id: 2 , name: 'Reena'},
+//     { id: 2 , name: 'Reena'}
+
+// ];
+// const ids = users.map(function(user){
+//  return user.id;
+// });
+// console.log(ids);
+
+//FOR IN LOOP
+ const user = {
+     firstName : 'harsha',
+     lastName: 'Athnere',
+     age: 22
+ }
+ for(let x in user){
+     console.log(`${x} : ${user[x]}`);
+ }
